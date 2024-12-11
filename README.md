@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 ## Edit some files before running the code based on your local path
 
-To correctly load the model weights and datasets, it is necessary to customize the `PATH` (for training) and `TEST_PATH` dictionaries in `paths.py`.
+To correctly load the model weights and datasets, it is necessary to customize the `PATH` and `TEST_PATH` dictionaries in `paths.py`.
 
 **X-VLM**:
 - `'xvlm_weights': 'yourpath/16m_base_model_state_step_199999.th'`
