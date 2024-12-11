@@ -17,6 +17,10 @@ our decoder's generative process is partially-ordered following the CGM structur
 Using extensive experiments on five compositional benchmarks, we show that our method significantly outperforms all the state-of-the-art compositional approaches, 
 usually by a large margin, and it also improves over  methods trained  using much larger datasets.
 
+## COGT Weights & Metadata
+- [Weights](https://drive.google.com/file/d/1zv_Ah-uhw_E9F7MIXFrfrJixAzLBCULn/view?usp=sharing)
+- [Metadata](https://drive.google.com/file/d/1S-antIYHtMUqQMmR5ulG7zP7nQQT0yZL/view?usp=sharing)
+
 ## Benchmarks 
 
 We evaluate our model on five compositional benchmarks:
@@ -70,8 +74,4 @@ To evaluate our model:
 ```
 scripts/COGT_X_inference.sh
 ```
-
-## COGT Weights & Metadata
-- [Weights](https://drive.google.com/file/d/1zv_Ah-uhw_E9F7MIXFrfrJixAzLBCULn/view?usp=sharing)
-- [Metadata](https://drive.google.com/file/d/1S-antIYHtMUqQMmR5ulG7zP7nQQT0yZL/view?usp=sharing)
 
