@@ -39,7 +39,8 @@ conda activate cogt
 pip install -r requirements.txt
 ```
 ## Edit some files before running the code based on your local path
-After downloading the metadata and checkpoint weights, be sure to customize the paths in `paths.py`.
+
+To correctly load the model weights and datasets, it is necessary to customize the `PATH` (for training) and `TEST_PATH` dictionaries in `paths.py`.
 
 **X-VLM**:
 - `'xvlm_weights': 'yourpath/16m_base_model_state_step_199999.th'`
@@ -48,7 +49,7 @@ After downloading the metadata and checkpoint weights, be sure to customize the 
 
 **Dataset**:
 
-To correctly load the model weights and datasets, it is necessary to customize the `PATH` (for training) and `TEST_PATH` dictionaries in `paths.py`. Specifically, the dataset metadata includes not only the original annotations from the specific benchmark but also the dependency trees required to construct the attention mask for COGT.
+The dataset metadata includes not only the original annotations from the specific benchmark but also the dependency trees required to construct the attention mask for COGT.
 
 To properly use the datasets, you need to download the benchmark-specific images and customize the `images` entry in the dictionary with the path to the folder containing the images. Similarly, the `metadata` entry should be updated with the path to the corresponding JSON file.
 
