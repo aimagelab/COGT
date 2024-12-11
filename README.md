@@ -1,4 +1,13 @@
-# Causal Graphical Models for Vision-Language Compositional Understanding
+<h1 align="center"> Causal Graphical Models for Vision-Language Compositional Understanding</br></h1>
+
+<div align='center'>
+
+#### [Fiorenzo Parascandolo](https://github.com/FiorenzoParascandolo1)\, [Nicholas Moratelli](https://nicholasmoratelli.github.io)\, [Enver Sangineto](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=144), [Lorenzo Baraldi](https://www.lorenzobaraldi.com/), and [Rita Cucchiara](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1)
+
+</div>
+<p align="center">
+  <img src="images/architecture.png" width=80%/> 
+</p>
 
 ## Abstract
 
@@ -8,20 +17,9 @@ our decoder's generative process is partially-ordered following the CGM structur
 Using extensive experiments on five compositional benchmarks, we show that our method significantly outperforms all the state-of-the-art compositional approaches, 
 usually by a large margin, and it also improves over  methods trained  using much larger datasets.
 
-## Create the environment
-```
-conda create -y -n "cogt" python=3.9.13
-conda activate cogt
-pip install -r requirements.txt
-```
+## Benchmarks 
 
-# Edit some files before running the code based on your local path
-- `xvlm_dir/configs/config_swinB_224.json` Edit the field "ckpt" with your local path.
-- `paths.py` You need to customize the paths once you have downloaded the data.
-
-
-## Dataset 
-We evaluate our model with five different dataset. Please download it from the original source.
+We evaluate our model on five compositional benchmarks:
 - [ARO](https://arxiv.org/pdf/2210.01936)
 - [SugarCrepe](https://arxiv.org/pdf/2306.14610)
 - [VL-CheckList](https://arxiv.org/pdf/2207.00221)
@@ -30,23 +28,50 @@ We evaluate our model with five different dataset. Please download it from the o
 We propose an additional benchmark commonly used to evaluate the ability of open-vocabulary object detectors to discern fine-grained object properties. We use it as a compositional benchmark to challenge models in recognizing attributes of common objects that rarely appear in the image foreground:
 - [FG-OVD](https://arxiv.org/pdf/2311.17518)
 
+## Create the environment
+```
+conda create -y -n "cogt" python=3.9.13
+conda activate cogt
+pip install -r requirements.txt
+```
+## Edit some files before running the code based on your local path
+After downloading the metadata and checkpoint weights, be sure to customize the paths in `paths.py`.
+
+**X-VLM**:
+- `'xvlm_weights': 'yourpath/16m_base_model_state_step_199999.th'`
+- `'config_xvlm': 'yourpath/Pretrain_XVLM_base_16m.yaml'`
+- `'config_swin_xvlm': 'yourpath/config_swinB_224.json'`
+
+**Dataset**:
+
+Download the images for the datasets based on the benchmark implementations and then customize the paths.
+
+Example:
+
+```
+TEST_PATH = {
+    "visual_genome_relation": {'images': 'yourpath/vg_relation_images',
+                               'metadata': 'yourpath/visual_genome_relation.json'}}
+```
+
 ## Training
 We train our models on custom COCO split dataset defined by [NegCLIP](https://arxiv.org/pdf/2210.01936).
 Use these scripts to train the models:
 ```
 scripts/COGT_CLIP_train.sh
 scripts/COGT_X-VLM_train.sh
+scripts/COGT_InstructBLIP_train.sh
 ```
-
+ 
 ## Inference
 To evaluate our model:
 ```
 scripts/COGT_CLIP_inference.sh
 scripts/COGT_X-VLM_inference.sh
+scripts/COGT_InstructBLIP_inference.sh
 ```
 
-## COGT Weights
-- [COGT-CLIP_ViT/B-32] The checkpoint is soon available.
-- [COGT-X-VLM] The checkpoint is soon available.
+## COGT Weights & Metadata
+- [COGT] The checkpoints are soon available. (also on HuggingFace Hub 🤗)
+- [Metadata] The metadata are soon available.
 
-Soon available also on HuggingFace Hub 🤗
