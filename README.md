@@ -44,7 +44,11 @@ After downloading the metadata and checkpoint weights, be sure to customize the 
 
 **Dataset**:
 
-Download the images for the datasets based on the benchmark implementations and then customize the paths.
+To correctly load the model weights and datasets, it is necessary to customize the `PATH` (for training) and `TEST_PATH` dictionaries in `paths.py`. Specifically, the dataset metadata includes not only the original annotations from the specific benchmark but also the dependency trees required to construct the attention mask for COGT.
+
+To properly use the datasets, you need to download the benchmark-specific images and customize the `images` entry in the dictionary with the path to the folder containing the images. Similarly, the `metadata` entry should be updated with the path to the corresponding JSON file.
+
+For the proposed FG-OVD benchmark, the images are sourced from the COCO val 2017 dataset.
 
 Example:
 
@@ -54,24 +58,21 @@ TEST_PATH = {
                                'metadata': 'yourpath/visual_genome_relation.json'}}
 ```
 
+The images for the proposed FG-OVD benchmark are
 ## Training
 We train our models on custom COCO split dataset defined by [NegCLIP](https://arxiv.org/pdf/2210.01936).
 Use these scripts to train the models:
 ```
-scripts/COGT_CLIP_train.sh
-scripts/COGT_X-VLM_train.sh
-scripts/COGT_InstructBLIP_train.sh
+scripts/COGT_X_train.sh
 ```
  
 ## Inference
 To evaluate our model:
 ```
-scripts/COGT_CLIP_inference.sh
-scripts/COGT_X-VLM_inference.sh
-scripts/COGT_InstructBLIP_inference.sh
+scripts/COGT_X_inference.sh
 ```
 
 ## COGT Weights & Metadata
-- [COGT] The checkpoints are soon available. (also on HuggingFace Hub 🤗)
-- [Metadata] The metadata are soon available.
+- [Weights](https://drive.google.com/file/d/1zv_Ah-uhw_E9F7MIXFrfrJixAzLBCULn/view?usp=sharing)
+- [Metadata](https://drive.google.com/file/d/1S-antIYHtMUqQMmR5ulG7zP7nQQT0yZL/view?usp=sharing)
 
