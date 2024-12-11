@@ -58,7 +58,6 @@ TEST_PATH = {
                                'metadata': 'yourpath/visual_genome_relation.json'}}
 ```
 
-The images for the proposed FG-OVD benchmark are
 ## Training
 We train our models on custom COCO split dataset defined by [NegCLIP](https://arxiv.org/pdf/2210.01936).
 Use these scripts to train the models:
