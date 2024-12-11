@@ -2,7 +2,7 @@
 
 <div align='center'>
 
-#### [Fiorenzo Parascandolo](https://github.com/FiorenzoParascandolo1)\, [Nicholas Moratelli](https://nicholasmoratelli.github.io)\, [Enver Sangineto](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=144), [Lorenzo Baraldi](https://www.lorenzobaraldi.com/), and [Rita Cucchiara](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1)
+#### [Fiorenzo Parascandolo](https://github.com/FiorenzoParascandolo1)\, [Nicholas Moratelli](https://nicholasmoratelli.github.io)\, [Enver Sangineto](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=144), [Lorenzo Baraldi](https://www.lorenzobaraldi.com/), [Rita Cucchiara](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1)
 
 </div>
 <p align="center">
