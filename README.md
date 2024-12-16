@@ -3,7 +3,7 @@
 <div align='center'>
 
 #### [Fiorenzo Parascandolo](https://github.com/FiorenzoParascandolo1)\, [Nicholas Moratelli](https://nicholasmoratelli.github.io)\, [Enver Sangineto](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=144), [Lorenzo Baraldi](https://www.lorenzobaraldi.com/), [Rita Cucchiara](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1)
-
+[![Paper](https://img.shields.io/badge/Paper-arxiv.2303.12112-B31B1B.svg)](https://arxiv.org/abs/2412.09353)
 </div>
 <p align="center">
   <img src="images/architecture.png" width=80%/> 
