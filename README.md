@@ -1,8 +1,15 @@
 <h1 align="center"> Causal Graphical Models for Vision-Language Compositional Understanding</br></h1>
 
+
+
 <div align='center'>
 
 #### [Fiorenzo Parascandolo](https://github.com/FiorenzoParascandolo1)\, [Nicholas Moratelli](https://nicholasmoratelli.github.io)\, [Enver Sangineto](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=144), [Lorenzo Baraldi](https://www.lorenzobaraldi.com/), [Rita Cucchiara](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1)
+
+<div align="center">
+  <img src="images/logo_iclr.png" alt="ICLR Logo" width="150"/>
+</div>
+
 [![Paper](https://img.shields.io/badge/Paper-arxiv.2303.12112-B31B1B.svg)](https://arxiv.org/abs/2412.09353)
 </div>
 <p align="center">
