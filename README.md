@@ -1,17 +1,26 @@
-<h1 align="center"> Causal Graphical Models for Vision-Language Compositional Understanding</br></h1>
+<h1 align="center"> 
+  Causal Graphical Models for<br> Vision-Language Compositional Understanding</br>
+</h1>
 
-
-
-<div align='center'>
-
-#### [Fiorenzo Parascandolo](https://github.com/FiorenzoParascandolo1)\, [Nicholas Moratelli](https://nicholasmoratelli.github.io)\, [Enver Sangineto](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=144), [Lorenzo Baraldi](https://www.lorenzobaraldi.com/), [Rita Cucchiara](https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1)
-
-<div align="center">
-  <img src="images/logo_iclr.png" alt="ICLR Logo" width="150"/>
+<div align="center" style="font-size: 16px; opacity: 0.7; margin-top: -10px;">
+  <strong>ICLR 2025</strong>
 </div>
 
-[![Paper](https://img.shields.io/badge/Paper-arxiv.2303.12112-B31B1B.svg)](https://arxiv.org/abs/2412.09353)
+<div align="center" style="font-size: 14px; opacity: 0.6; margin-top: 5px;">
+  <p>
+    <a href="https://github.com/FiorenzoParascandolo1">Fiorenzo Parascandolo</a>, 
+    <a href="https://nicholasmoratelli.github.io">Nicholas Moratelli</a>, 
+    <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=144">Enver Sangineto</a>, 
+    <a href="https://www.lorenzobaraldi.com/">Lorenzo Baraldi</a>, 
+    <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1">Rita Cucchiara</a>
+  </p>
 </div>
+<br>
+<div align="center" style="font-size: 16px; margin-top: 10px;">
+  🔗 <a href="https://aimagelab.github.io/COGT/">Project Page</a> | 📄 <a href="https://arxiv.org/abs/2412.09353">Paper</a>
+</div>
+
+<br>
 <p align="center">
   <img src="images/architecture.png" width=80%/> 
 </p>
